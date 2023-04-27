@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FireBase</string>
+    <string name="AppTitle">FireBase notebook</string>
+    <string name="createNote">Create note</string>
+    <string name="addImage">Camera</string>
+    <string name="enterText">Enter Text</string>
+    <string name="galleryButton">Gallery</string>
+</resources>

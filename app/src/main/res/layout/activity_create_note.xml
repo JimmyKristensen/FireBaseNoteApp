@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/createPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controller.CreateNoteActivity">
+
+    <TextView
+        android:id="@+id/crateNotePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/createNote"
+        app:layout_constraintBottom_toTopOf="@+id/enterNoteText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.162" />
+
+    <EditText
+        android:id="@+id/enterNoteText"
+        android:layout_width="248dp"
+        android:layout_height="66dp"
+        android:contentDescription="@string/enterText"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <Button
+        android:id="@+id/createNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="createNote"
+        android:text="@string/createNote"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterNoteText"
+        app:layout_constraintVertical_bias="0.784" />
+
+    <Button
+        android:id="@+id/cameraButton"
+        android:layout_width="149dp"
+        android:layout_height="59dp"
+        android:layout_marginEnd="40dp"
+        android:onClick="cameraButtonPress"
+        android:text="@string/addImage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterNoteText"
+        app:layout_constraintVertical_bias="0.214" />
+
+    <ImageView
+        android:id="@+id/ImageForCreateNote"
+        android:layout_width="290dp"
+        android:layout_height="199dp"
+        app:layout_constraintBottom_toTopOf="@+id/enterNoteText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/crateNotePage"
+        app:layout_constraintVertical_bias="0.494"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <Button
+        android:id="@+id/gallaryButton"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="36dp"
+        android:onClick="galleryOnClick"
+        android:text="@string/galleryButton"
+        app:layout_constraintBottom_toTopOf="@+id/createNote"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterNoteText"
+        app:layout_constraintVertical_bias="0.441" />
+</androidx.constraintlayout.widget.ConstraintLayout>

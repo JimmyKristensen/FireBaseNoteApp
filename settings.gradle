@@ -1,0 +1,18 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)  // change to this
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }  // and add this line
+    }
+}
+
+rootProject.name = "FireBase"
+include ':app'
